@@ -1,0 +1,112 @@
+<template>
+	<view class="container">
+		<view class="person" @click="funcPushSet"> 
+			<view class="personHeaderText">
+				<text :style="{color : 'white'}">{{ attrUserSource.name || ""}}</text> 
+			</view>
+			<view class="personBody">
+				<text class="personName">{{ attrUserSource.name }}</text>
+				<text class="subName">{{ attrUserSource.organization && attrUserSource.organization.name || "暂无" }} {{ attrUserSource.position || "暂无" }}</text>
+			</view>
+			<uni-icons type="arrowright"></uni-icons>
+		</view>
+	</view>
+</template>
+<script>
+const userInfo = uni.getStorageSync('UserInfo')
+import uniNavBar from '@/components/uni-nav-bar/uni-nav-bar.vue'
+export default {
+	data() {
+		return {
+			attrUserSource : userInfo || {},
+		}
+	},
+	
+	components: {
+		uniNavBar
+	},
+	
+	onShow() {
+		this.attrUserSource = uni.getStorageSync('UserInfo')
+		
+		const authorization = uni.getStorageSync('Authorization')
+		
+		if(!authorization) {
+			uni.reLaunch({
+				url: "../../pageLogin/pageLoginMain"
+			})
+		}
+	},
+	
+	methods: {
+		/**
+		 * 跳转熬设置
+		 */
+		funcPushSet() {
+			uni.navigateTo({
+				url : './pageSet'
+			})
+		},
+		
+		
+	}
+};
+</script>
+
+<style>
+	@import '../../../common/uni-nvue.css';
+	
+	.container {
+		height: 100%;
+		flex-direction: column;
+		background-color: white;
+	}
+	
+	.person {
+		border-top : 1rpx #ccc solid;
+		height: 200rpx;
+		background-color: white; 
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		padding: 30rpx;
+	}
+	
+	.personHeaderText {
+		width: 120rpx;
+		height: 120rpx; 
+		border-radius: 50%;
+		background-color: green;
+		justify-content: center;
+		align-items: center;
+		font-size: 30rpx;
+		font-weight: bold;
+		color: white;
+	}
+	
+	.personBody {
+		flex: 1;
+		margin-left: 20rpx;
+	}
+	
+	.subName {
+		margin-top: 10rpx;
+		font-size: 28rpx;
+	}
+	
+	.personName {
+		font-size: 34rpx;
+		font-weight: bold;
+	}
+	
+	.clearButton {
+		flex: 1;
+		background-color: white;
+	}
+	
+	.content {
+		position:fixed;
+		flex-direction: row;
+		bottom: 160rpx;
+	}
+</style>

@@ -1,0 +1,161 @@
+<template>
+	<view class="container">
+		<uni-nav-bar title="工作" statusBar=true backgroundColor="#FFFFFF" />
+		<text class="mainLabel">常用应用</text>
+		<uni-grid :column="4" :highlight="true" @change="funcGridChange">
+			<uni-grid-item v-for="(item, index) in attrIconList" :index="index" :key="index">
+				<view class="grid-item-box" style="background-color: #fff;">
+					<image :src="item.url" class="image" mode="aspectFill" />
+					<text class="text">{{ item.text }}</text>
+				</view>
+			</uni-grid-item>
+		</uni-grid>
+
+	</view>
+</template> 
+<script>
+	const userInfo = uni.getStorageSync('UserInfo')
+	import uniNavBar from '@/components/uni-nav-bar/uni-nav-bar.vue'
+	import uniGrid from '@/components/uni-grid/uni-grid.vue'
+	export default {
+		data() {
+			return { 
+				attrIconList : [{
+					url: '/static/c1.png',
+					text: '客户',
+					type: "primary",
+					path: 'pageCustomer/customerMain'
+				},
+				{
+					url: '/static/c2.png',
+					text: '跟进记录',
+					path: 'pageProgress/progressMain'
+				},
+				{
+					url: '/static/c3.png',
+					text: '商品',
+					path: 'pageGoods/goodsMain'
+				},
+				{
+					url: '/static/c4.png',
+					text: '外勤拜访',
+					path: 'pageVisit/visitMain'
+				},
+				{
+					url: '/static/c5.png',
+					text: '流程审批',
+					path: 'pageApproval/approvalMain'
+				},
+				{
+					url: '/static/c6.png',
+					text: '回款',
+					path: 'pageReceivable/receivableMain'
+				},
+				{
+					url: '/static/c7.png',
+					text: '合同',
+					path: 'pageContract/contractMain'
+				},
+				{
+					url: '/static/c8.png',
+					text: '销售订单',
+					path: 'pageOrder/orderMain'
+				},
+				{
+					url: '/static/c9.png',
+					text: '任务',
+					path: 'pageTask/taskMain'
+				},
+				{
+					url: '/static/c10.png',
+					text: '报销',
+					path: 'pageExpense/expenseMain'
+				},
+				]
+			}
+		},
+		
+		components: {
+			uniNavBar,
+			uniGrid
+		},
+		
+		created() {
+			const authorization = uni.getStorageSync('Authorization')
+			if(!authorization) {
+				uni.reLaunch({
+					url: "../../pageLogin/pageLoginMain"
+				})
+			}
+		},
+		
+		// onShow() {
+		// 	if(!userInfo) {
+		// 		uni.redirectTo({
+		// 			url: "../../pageLogin/pageLoginMain"
+		// 		});
+		// 		return
+		// 	}
+		// },
+		
+		mounted() {
+			// const data = this.attrIconList
+			// if(userInfo && userInfo.is_admin) {
+			// 	const item = {
+			// 		url: '/static/yg.png',
+			// 		text: '员工',
+			// 		path: 'pageEmployees/pageEmployeesCreate'
+			// 	}
+			// 	data.push(item)
+			// 	this.attrIconList = data
+			// }
+		},
+		
+		methods: {
+			/**
+			 * icon点击
+			 */
+			funcGridChange(e) {
+				const index = e.detail.index
+				const item = this.attrIconList[index]
+				uni.navigateTo({
+					url: `../../${item.path}`
+				})
+			}
+		}
+	}
+</script>
+
+<style>
+	@import '../../../common/uni-nvue.css';	
+	.grid-item-box {
+		flex: 1;
+		/* #ifndef APP-NVUE */
+		/* display: flex; */
+		/* #endif */
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 30rpx 0;
+	}
+	
+	.mainLabel { 
+		background-color: white;
+		font-size: 35rpx;
+		height: 120rpx;
+		line-height: 120rpx;
+		padding: 0rpx 40rpx;
+		font-weight: bold; 
+		align-items: center;
+	}
+	
+	.image {
+		width: 50rpx;
+		height: 50rpx;
+	}
+	
+	.text { 
+		font-size: 26rpx;
+		margin-top: 10rpx;
+	}
+</style>

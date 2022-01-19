@@ -1,0 +1,98 @@
+<template>
+	<view class="container">
+		<view class="person" @click="funcPushOrganization">
+			<view class="personBody">
+				<text class="personName">部门</text>
+			</view>
+			<uni-icons type="arrowright"></uni-icons>
+		</view>
+		<view class="person" @click="funcPushAddPerson" v-if="attrShowAdd">
+			<view class="personBody">
+				<text class="personName">员工</text>
+			</view>
+			<uni-icons type="arrowright"></uni-icons>
+		</view>
+	</view>
+</template> 
+<script>
+	import uniNavBar from '@/components/uni-nav-bar/uni-nav-bar.vue'
+	export default {
+		data() {
+			return { 
+				attrShowAdd : false
+			}
+		},
+		
+		onShow() {
+			const userInfo = uni.getStorageSync('UserInfo')
+			const authorization = uni.getStorageSync('Authorization')
+			if(!authorization) {
+				uni.reLaunch({
+					url: "../../pageLogin/pageLoginMain"
+				})
+			}
+			if(userInfo.is_admin) {
+				this.attrShowAdd = true
+			} else {
+				this.attrShowAdd = false
+			}
+		},
+		
+		mounted() {
+			const userInfo = uni.getStorageSync('UserInfo')
+			if(userInfo.is_admin) {
+				this.attrShowAdd = true
+			} else {
+				this.attrShowAdd = false
+			}
+		},
+
+		methods: {
+			/**
+			 * 跳转到部门
+			 */
+			funcPushOrganization() {
+				uni.navigateTo({
+					url : './organizationList'
+				})
+			},
+			
+			/**
+			 * 跳转到员工添加
+			 */
+			funcPushAddPerson() {
+				uni.navigateTo({
+					url : '../../pageEmployees/pageEmployeesCreate'
+				})
+			}
+		}
+	}
+</script>
+
+<style>
+@import '../../../common/uni-nvue.css';	
+
+.container {
+	height: 220rpx;
+	flex-direction: column;
+}
+
+.person {
+	border-top : 1rpx #f4eaea solid;
+	height: 110rpx;
+	background-color: white; 
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 0rpx 30rpx;
+}
+
+.personBody {
+	flex: 1;
+	margin-left: 0rpx;
+}
+
+.personName {
+	font-size: 30rpx;
+}
+</style>

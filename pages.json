@@ -1,0 +1,1914 @@
+{
+	"leftWindow": {
+		"path": "windows/left-window.vue",
+		"style": {
+			"width": "0px"
+		}
+	},
+	"topWindow": {
+		"path": "windows/top-window.vue",
+		"style": {
+			"height": "60px"
+		}
+	},
+	"pages": [{
+			"path": "pages/pageTabBar/message/message",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "消息",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		},{
+			"path": "pages/pageTabBar/organization/organization",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "部门",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					}
+				}
+			}
+		}, {
+			"path": "pages/pageTabBar/work/work",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF" // iOS APP真机bounce回弹区域默认灰色,建议统一重置为白色
+				},
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		},
+		{
+			"path": "pages/pageTabBar/my/my",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "我的",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		},
+		{
+			"path": "pages/pageTabBar/my/modifyPassword",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "修改密码",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		},
+		{
+			"path": "pages/pageTabBar/my/pageSet",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "设置",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageCustomer/customerMain",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "客户",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+							"index": 1,
+							"text": "\ue602",
+							"color": "",
+							"fontSrc": "/static/iconfont.ttf",
+							"fontSize": "25px"
+						}
+						// {
+						// 	"index": 2,
+						// 	"text": "管理",
+						// 	"fontSize": "16px",
+						// 	"width": "auto"
+						// }
+					]
+				}
+			}
+		}, {
+			"path": "pages/pageCustomer/customInfo",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "客户信息",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"type":"menu"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageProgress/progressMain",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "客户跟进记录",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"text": "\ue602",
+						"color": "",
+						"fontSrc": "/static/iconfont.ttf",
+						"fontSize": "25px"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageVisit/visitDate",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageVisit/visitDetail",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "拜访详情",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageGoods/goodsMain",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "商品",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"onReachBottomDistance": 200,
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+							"text": "\ue602",
+							"color": "",
+							"fontSrc": "/static/iconfont.ttf",
+							"fontSize": "25px"
+						}
+						// {
+						// 	"text": "管理",
+						// 	"fontSize": "16px",
+						// 	"width": "auto"
+						// }
+					]
+				}
+			}
+		}, {
+			"path": "pages/pageGoods/goodsListSelect",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "选择商品",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"onReachBottomDistance": 200,
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageGoods/goodsList",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "选择商品",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"onReachBottomDistance": 200,
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"text": "添加商品",
+						"fontSize": "16px",
+						"width": "auto"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageGoods/goodsAddPage",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "添加商品",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"onReachBottomDistance": 200,
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"text": "完成",
+						"fontSize": "16px",
+						"width": "auto"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageVisit/visitMain",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "外勤拜访",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black",
+				"onReachBottomDistance": 200,
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+							"text": "\ue602",
+							"color": "",
+							"fontSrc": "/static/iconfont.ttf",
+							"fontSize": "25px"
+						// },
+						// {
+						// 	"text": "管理",
+						// 	"fontSize": "16px",
+						// 	"width": "auto"
+						}
+					]
+				}
+			}
+
+		}, {
+			"path": "pages/pageVisit/visitCreate",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "新建外勤拜访",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black",
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+							"text": "提交",
+							"fontSize": "16px",
+							"width": "auto"
+						}
+					]
+				}
+			}
+
+		}, {
+			"path": "pages/pageApproval/approvalMain",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "流程审批",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [
+						// {
+						// 	"text": "申请",
+						// 	"fontSize": "16px",
+						// 	"width": "auto"
+						// },
+						// {
+						// 	"text": "管理",
+						// 	"fontSize": "16px",
+						// 	"width": "auto"
+						// }
+					]
+				}
+			}
+
+		}, {
+			"path": "pages/pageReceivable/receivableMain",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "回款",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black",
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+							"text": "\ue602",
+							"color": "",
+							"fontSrc": "/static/iconfont.ttf",
+							"fontSize": "25px"
+						// },
+						// {
+						// 	"text": "管理",
+						// 	"fontSize": "16px",
+						// 	"width": "auto"
+						}
+					]
+				}
+			}
+		}, {
+			"path": "pages/pageReceivable/receivableAndRefundList",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "我可以查看的回款",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "pages/pageReceivable/receivableCreatePerson",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "回款人审批设置",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black",
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [
+						{
+							"text": "完成",
+							"fontSize": "16px",
+							"width": "auto"
+						}
+					]
+				}
+			}
+		},
+		{
+			"path": "pages/pageContract/contractMain",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "合同",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black",
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+							"text": "\ue602",
+							"color": "",
+							"fontSrc": "/static/iconfont.ttf",
+							"fontSize": "25px"
+						// },
+						// {
+						// 	"text": "管理",
+						// 	"fontSize": "16px",
+						// 	"width": "auto"
+						}
+					]
+				}
+			}
+		}, {
+			"path": "pages/pageContract/contractDetail",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "合同",
+				"navigationBarBackgroundColor": "#696976",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "white",
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"type":"menu"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageContract/contractCreate",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "新建合同",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black",
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [
+						{
+							"text": "完成",
+							"fontSize": "16px",
+							"width": "auto"
+						}
+					]
+				}
+			}
+		}, {
+			"path": "pages/pageContract/contarctList",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "合同",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "pages/pageOrder/orderMain",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "销售订单",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black",
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"text": "\ue602",
+						"color": "",
+						"fontSrc": "/static/iconfont.ttf",
+						"fontSize": "25px"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageOrder/orderCreate",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "创建订单",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black",
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"text": "完成",
+						"fontSize": "16px",
+						"width": "auto"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageOrder/orderDetail",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "订单详情",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "pages/pageOrder/orderAnalysis",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "销售订单分析",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "pages/pageOrder/orderAnalysisOrder",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "pages/pageOrder/orderAnalysisList",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "分析订单列表",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "pages/pageOrder/orderInfo",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "订单信息",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black",
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						// "type":"menu"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageOrder/orderReviewList",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "我可以查看的订单",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black"
+			}
+		}, 
+		{
+			"path": "pages/pageOrder/orderCorresponding",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "选择对应的订单",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "pages/pageTask/taskMain",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "任务",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black",
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"text": "\ue602",
+						"color": "",
+						"fontSrc": "/static/iconfont.ttf",
+						"fontSize": "25px"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageTask/taskList",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "任务",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "pages/pageTask/taskAnalysis",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "任务统计",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "pages/pageTask/taskCreate",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "新建任务",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black",
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"text": "完成",
+						"fontSize": "16px",
+						"width": "auto"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageTask/taskDetail",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "任务详情",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black",
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"type":"menu"
+					}]
+				}
+			}
+		},{
+			"path": "pages/pageTask/taskComment",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "发评论",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black",
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"text": "完成",
+						"fontSize": "16px",
+						"width": "auto"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageTask/taskRelease",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "发布的任务",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black",
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"text": "\ue602",
+						"color": "",
+						"fontSrc": "/static/iconfont.ttf",
+						"fontSize": "25px"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageExpense/expenseAnalysisDetail",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "类型分布",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					}
+				}
+			}
+		}, {
+			"path": "pages/pageExpense/expenseAnalysisList",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "报销",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					}
+				}
+			}
+		}, {
+			"path": "pages/pageExpense/expenseAnalysis",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "报销分析",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					}
+				}
+			}
+		}, {
+			"path": "pages/pageExpense/expenseMain",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "报销",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+							"text": "\ue602",
+							"color": "",
+							"fontSrc": "/static/iconfont.ttf",
+							"fontSize": "25px"
+						// },
+						// {
+						// 	"text": "管理",
+						// 	"fontSize": "16px",
+						// 	"width": "auto"
+						}
+					]
+				}
+			}
+		}, {
+			"path": "pages/pageExpense/expenseCreate",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "新建消费记录",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [
+						{
+							"text": "完成",
+							"fontSize": "16px",
+							"width": "auto"
+						}
+					]
+				}
+			}
+		}, {
+			"path": "pages/pageExpense/expenseCreatePerson",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "报销审批人设置",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [
+						{
+							"text": "完成",
+							"fontSize": "16px",
+							"width": "auto"
+						}
+					]
+				}
+			}
+		}, {
+			"path": "pages/pageExpense/expenseCreateAccount",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "新建报销单",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [
+						{
+							"text": "完成",
+							"fontSize": "16px",
+							"width": "auto"
+						}
+					]
+				}
+			}
+		},{
+			"path": "pages/pageExpense/expenseDetail",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "报销单详情",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageExpense/expenseBeenApproval",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "已审批的报销单",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageExpense/expenseMyPay",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "需要我支付的报销单",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageExpense/expenseSelect",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "选择要报销的消费",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageExpense/expenseTypeList",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "选择消费类型",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageExpense/expenseNeedMyApproval",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "需要我审批的报销单",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageExpense/expenseAccount",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "我提交的报销单",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageCustomer/customerRechecking",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "客户查重",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"bounce": "none"
+				},
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+
+		}, {
+			"path": "pages/pageCustomer/customerClassifying",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "客户",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "pages/pageCustomer/customerDataList",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "客户",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "pages/pageCustomer/customerOrder",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "订单",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black",
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"text": "\ue602",
+						"color": "",
+						"fontSrc": "/static/iconfont.ttf",
+						"fontSize": "25px"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageCustomer/customerAnalysis",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "客户分析",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "pages/pageCustomer/customerRepeat",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "查重数据",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"bounce": "none"
+				},
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+
+		}, {
+			"path": "pages/pageCustomer/customerSearch",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "搜索",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"bounce": "none"
+				},
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+
+		}, {
+			"path": "pages/pageCustomer/customerReview",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "我可以查看的客户",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"app-plus": {
+					"bounce": "none"
+				},
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageCustomer/customerDetail",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "客户详情",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageCustomer/customerCreate",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "新建客户",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"index": 1,
+						"text": "完成",
+						"fontSize": "16px",
+						"width": "auto"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageCustomer/customerLevel",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"navigationBarTitleText": "选择客户",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					}
+				}
+			}
+
+		}, {
+			"path": "pages/pageCommunication/communication",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "添加会话沟通",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"onReachBottomDistance": 200,
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"index": 1,
+						"text": "完成",
+						"fontSize": "16px",
+						"width": "auto"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageCustomer/customerList",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "选择我的客户",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"onReachBottomDistance": 200,
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"index": 1,
+						"text": "新建客户",
+						"fontSize": "16px",
+						"width": "auto"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageGoods/goodsDetailCreate",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "新建商品",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"index": 1,
+						"text": "完成",
+						"fontSize": "16px",
+						"width": "auto"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageGoods/goodsOrderList",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "相关订单",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageGoods/goodsDetailStatus",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "选择状态",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageGoods/goodsAnalysis",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "商品分析",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageGoods/goodsInfo",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "商品信息",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"type":"menu"
+						}
+					]
+				}
+			}
+		}, {
+			"path": "pages/pageGoods/goodsDetail",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "商品详情",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageCommon/unitList",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "选择单位",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+
+		}, {
+			"path": "pages/pageVisit/visitRecord",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "我可以查看的记录",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+
+		}, {
+			"path": "pages/pageApproval/approvalNeedMe",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "需要我审批的流程",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+
+		}, {
+			"path": "pages/pageApproval/approvalProcess",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+
+		}, {
+			"path": "pages/pageReceivable/receivableCreate",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "新建回款",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"index": 1,
+						"text": "完成",
+						"fontSize": "16px",
+						"width": "auto"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageReceivable/receivableProcess",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "审批流程",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "pages/pageReceivable/receivableList",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "回款列表",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "pages/pageReceivable/receivableAnalysis",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "回款分析",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "black"
+			}
+		}, {
+			"path": "pages/pageReceivable/receivableDetail",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "回款详情",
+				"navigationBarBackgroundColor": "#4b4bb8",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"navigationBarTextStyle": "white",
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"type":"menu"
+						}
+					]
+				}
+			}
+		}, {
+			"path": "pages/pageReceivable/reveivableOrder",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "选择对应的订单",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageCommon/methodPayment",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "选择回款方式",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageContract/contractReview",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "我可以查看的合同",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageLogin/pageLoginMain",
+			"style": {
+				"app-plus": {
+					"bounce": "none",
+					"titleNView" : false
+				},
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageLogin/pageLoginMain",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageLogin/pageLoginRegister",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageLogin/pageLoginRetrievePassword",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "找回密码",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"index": 1,
+						"text": "下一步",
+						"fontSize": "16px",
+						"width": "auto"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageLogin/pageLoginCaptcha",
+			"style": {
+				"navigationBarTitleText": "找回密码",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"index": 1, 
+						"text": "下一步",
+						"fontSize": "16px",
+						"width": "auto"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageEmployees/pageEmployeesMain",
+			"style": {
+				"navigationBarTitleText": "员工列表",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"index": 1, 
+						"text": "确定",
+						"fontSize": "16px",
+						"width": "auto"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageEmployees/pageEmployeesCreate",
+			"style": {
+				"navigationBarTitleText": "手动添加员工",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageEmployees/pageEmployeesEdit",
+			"style": {
+				"navigationBarTitleText": "修改员工",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageVisit/visitWay",
+			"style": {
+				"navigationBarTitleText": "选择跟进的方式",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		}, {
+			"path": "pages/pageApprovalSet/pageApprovalSet",
+			"style": {
+				"navigationBarTitleText": "销售订单管理",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		},{
+			"path": "pages/pageTabBar/message/noWork",
+			"style": {
+				"navigationBarTitleText": "未处理工作",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				}
+			}
+		},  {
+			"path": "pages/pageApprovalSet/pageApprovalCreate",
+			"style": {
+				"navigationBarTitleText": "流程审批设置",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"index": 1, 
+						"text": "完成",
+						"fontSize": "16px",
+						"width": "auto"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageTabBar/organization/organizationList",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "部门列表",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"index": 1,
+						"text": "\ue602",
+						"color": "",
+						"fontSrc": "/static/iconfont.ttf",
+						"fontSize": "25px"
+					}]
+				}
+			}
+		}, {
+			"path": "pages/pageTabBar/organization/organizationCreate",
+			"style": {
+				"globalStyle": {
+					"backgroundColorTop": "#FFFFFF"
+				},
+				"navigationBarTitleText": "部门",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTextStyle": "black",
+				"mp-alipay": {
+					"allowsBounceVertical": "NO"
+				},
+				"titleNView": {
+					"padding-right": "6px",
+					"splitLine": {
+						"color": "rgba(204, 204, 204, 0.3)"
+					},
+					"buttons": [{
+						"index": 1, 
+						"text": "完成",
+						"fontSize": "16px",
+						"width": "auto"
+					}]
+				}
+			}
+		}
+    ],
+	"globalStyle": {
+		"pageOrientation": "portrait",
+		"navigationBarTitleText": "Hello uniapp",
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#007AFF",
+		"backgroundColor": "#F8F8F8",
+		"backgroundColorTop": "#F4F5F6",
+		"backgroundColorBottom": "#F4F5F6",
+		"mp-360": {
+			"navigationStyle": "custom"
+		},
+		"h5": {
+			"maxWidth": 1190,
+			"navigationBarTextStyle": "black",
+			"navigationBarBackgroundColor": "#F1F1F1" 
+		}
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#007AFF",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [	{
+				"pagePath": "pages/pageTabBar/message/message",
+				"iconPath": "static/message-1.png",
+				"selectedIconPath": "static/message-2.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/pageTabBar/organization/organization",
+				"iconPath": "static/bumen-2.png",
+				"selectedIconPath": "static/bumen-1.png",
+				"text": "部门"
+			},
+			{
+				"pagePath": "pages/pageTabBar/work/work",
+				"iconPath": "static/component.png",
+				"selectedIconPath": "static/componentHL.png",
+				"text": "工作"
+			},
+			{
+				"pagePath": "pages/pageTabBar/my/my",
+				"iconPath": "static/api.png",
+				"selectedIconPath": "static/apiHL.png",
+				"text": "我的"
+			}
+		]
+	}
+}
